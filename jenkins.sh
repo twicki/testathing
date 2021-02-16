@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git clone git@github.com:VulcanClimateModeling/daint_venv.git
 cd daint_venv
 ./install.sh test_ve
