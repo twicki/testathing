@@ -5,7 +5,8 @@ source test_ve/bin/activate
 export MODULEPATH=${MODULEPATH}:/project/s1053/install/modulefiles
 module load ccache/4.2
 
-create_ccache `pwd`/ccahe
-source /scratch/snx3000/tobwi/sbox/simole/ccahe/bin/activate_ccache
+create_ccache /scratch/snx3000/tobwi/cache_test/ccache
+source /scratch/snx3000/tobwi/cache_test/ccache/bin/activate_ccache
 export CCACHE_BASEDIR=`pwd`
+time python file.py
 time python file.py
